@@ -1,7 +1,102 @@
-.main{
-  text-align:center;
+body{
+  background-color: #00BFFF;
+  
 }
-html{
-  height:100%;
-  background: linear-gradient(lightblue, grey);
+h1{
+  position: relative;
+  left: 35%;
+  top: 5%;
+  height: 25%;
+  max-height: 100%;
+  max-width: 100%;
+  width: 23%;
+}
+#city{
+  position: relative;
+  left: 40%;
+  
+}
+#region{
+  position: relative;
+  left: 44%;
+}
+#temperature{
+  position: relative;
+  left: 45%;
+  font-size: 30px;
+  width: 8%;
+}
+#image{
+  position: relative;
+  left: 45.5%; 
+  -webkit-animation: image 10s infinite;
+  -webkit-animation-direction: alternate;
+  animation: image 10s infinite;
+  animation-direction: alternate;
+}
+
+#weather{
+  position: relative;
+  left: 43%;
+  font-family: verdana;
+}
+
+@keyframes image{
+  0% {left: 35%;}
+  100% {left: 55%;}
+}
+/*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_switch*/
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  top: -29px;
+  left: 51%;
+  
+}
+.toggle input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 50%;
+  right: 0;
+  bottom: 0;
+  background-color: red;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "\00b0""F";
+  font-size: 12px;
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #ccc;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
