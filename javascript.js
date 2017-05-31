@@ -31,6 +31,12 @@ $(document).ready(function(){
      
       //get the correct image with the current weather
       icon = WeatherInfo.weather[0].icon;
+
+        if(icon[2] === "n"){
+          $("body").css("background-color", "#4B0082");
+        }
+
+
       switch(icon){
           case "01d": 
                 $("#image").html('<img src="http://openweathermap.org/img/w/01d.png" height=30px width=30px/>');
