@@ -1,6 +1,8 @@
 body{
-  background-color: #00BFFF;
-  
+ background-color: #00BFFF;
+
+ //background-image: url("weather.jpg");
+ //background-size: cover;
 }
 h1{
   position: relative;
@@ -99,4 +101,104 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+#road{
+  position: relative;
+  top: 120px;
+  height: 300px;
+  width: 100%;
+  
+}
+
+#bluecar{
+  position: relative;
+  height: 110px;
+  top: -100px;
+  width: 110px;
+  -webkit-animation: bluecar 30s infinite;
+  -webkit-animation-direction: normal;
+  animation: bluecar 30s infinite;
+  animation-direction: normal;
+}
+@keyframes bluecar{
+  0% {left: 0%;}
+  3%{-webkit-transform: rotate(10deg);
+     -webkit-transform: translate(35px, 35px);
+     }
+  5%{-webkit-transform: rotate(-30deg);
+     -webkit-transform: translate(40px, 50px);
+   }
+  10%{
+    -webkit-transform: translate(60px, 90px);
+  }
+  20%{
+    -webkit-transform: translate(80px, 80px);
+  }
+  50%{
+    -webkit-transform: translate(100px, 70px);
+  }
+  60%{
+    -webkit-transform: translate(110px, 60px);
+  }
+
+  100% {left: 100%;}
+}
+
+#redcar{
+  position: relative;
+  height: 150px;
+  top: -110px;
+  width: 150px;
+  left: 130px;
+  transform: rotate(-90deg);
+  animation: redcar 30s infinite;
+  -webkit-animation: redcar 30s infinite;
+}
+
+@keyframes redcar{
+  
+  5%{-webkit-transform: rotate(-160deg);
+  }
+  8%{-webkit-transform: rotate(-160deg);
+  }
+  10%{
+    -webkit-transform: rotate(-180deg);
+  }
+  12%{
+    -webkit-transform: rotate(-160deg);
+  }
+  14%{
+    -webkit-transform: rotate(-180deg);
+  }
+  16%{
+    -webkit-transform: rotate(-160deg);
+  }
+  18%{
+    -webkit-transform: rotate(-180deg);
+  }
+  20%{
+    -webkit-transform: rotate(-160deg);
+  }
+  25%{
+    -webkit-transform: rotate(-180deg);
+  }
+  30%{
+    -webkit-transform: rotate(-160deg);
+  }
+  40%{
+    -webkit-transform: rotate(-180deg);
+  }
+  50%{
+    -webkit-transform: rotate(-160deg);
+  }
+  60%{
+    -webkit-transform: rotate(-180deg);
+  }
+  80%{
+    -webkit-transform: rotate(-160deg);
+  }
+  100%{
+    -webkit-transform: rotate(-180deg);
+  }
 }

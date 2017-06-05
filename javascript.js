@@ -39,20 +39,20 @@ $(document).ready(function(){
 
       switch(icon){
           case "01d": 
-                $("#image").html('<img src="http://openweathermap.org/img/w/01d.png" height=30px width=30px/>');
+                $("#image").html('<img src="http://openweathermap.org/img/w/01d.png" height=50px width=50px/>');
                 break;
           case "01n":
-                 $("#image").html('<img src="http://openweathermap.org/img/w/01n.png" height=30px width=30px/>');
+                 $("#image").html('<img src="http://openweathermap.org/img/w/01n.png" height=50px width=50px/>');
                 break;
           case "02d":
-                  $("#image").html('<img src="http://openweathermap.org/img/w/02d.png" height=30px width=30px/>');
+                  $("#image").html('<img src="http://openweathermap.org/img/w/02d.png" height=50px width=50px/>');
                 break;
           case "02n":
                    $("#image").html('<img src="http://openweathermap.org/img/w/02n.png" height=30px width=30px/>');
                 break;
           case "03d":
           case "03n":
-                   $("#image").html('<img src="http://openweathermap.org/img/w/03d.png" height=30px width=30px/>');
+                   $("#image").html('<img src="http://openweathermap.org/img/w/03d.png" height=50px width=50px/>');
                 break;
           case "04d":
           case "04n":
